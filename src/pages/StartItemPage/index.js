@@ -1,0 +1,1 @@
+export { default as StartItemPage } from "./StartItemPage";

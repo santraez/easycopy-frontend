@@ -1,0 +1,43 @@
+.container
+  width: 70px
+  height: 505px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-content: center
+  padding: 5px
+  border-radius: 40px
+  background-color: var(--c-25)
+  @media (max-width: 480px)
+    width: 45px
+    height: 550px
+    border-radius: 0 40px 40px 0
+    margin-top: 50px
+  .enable, .disable
+    width: 60px
+    height: 49.5%
+    z-index: 996
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    border-radius: 40px
+    cursor: pointer
+    transition: all 0.3s ease-in-out
+    p
+      transform: rotate(270deg)
+      text-transform: uppercase
+      font-size: 28px
+      user-select: none
+    @media (max-width: 480px)
+      width: 35px
+      border-radius: 0 40px 40px 0
+  .enable
+    background-color: var(--c-75)
+    p
+      font-weight: 700
+      color: var(--c-25)
+  .disable
+    background-color: var(--c-25)
+    p
+      color: var(--c-100)

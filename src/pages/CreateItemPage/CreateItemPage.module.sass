@@ -1,0 +1,117 @@
+.container
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  @media (max-width: 480px)
+    margin-top: 5px
+  .inputs
+    width: 265px
+    height: 75px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-radius: 20px
+    padding: 0 25px
+    background-color: var(--c-25)
+    margin-bottom: 15px
+    border: 3px dashed var(--c-100)
+    @media (max-width: 480px)
+      width: 260px
+      height: 90px
+      margin-bottom: 23px
+    input
+      width: 100%
+      font-size: 30px
+      background-color: transparent
+      border: none
+      color: var(--c-75)
+      @media (max-width: 480px)
+        font-size: 27px
+      &:focus
+        outline: none
+    span
+      font-size: 36px
+      user-select: none
+  .text
+    font-size: 18px
+    font-weight: 700
+    margin-top: -7px
+  .button
+    width: 265px
+    height: 75px
+    text-align: center
+    border: 5px solid var(--c-25)
+    border-radius: 40px
+    font-size: 45px
+    color: var(--c-25)
+    background: transparent
+    user-select: none
+    cursor: default
+    margin-top: 35px
+    &:focus
+      outline: none
+
+.containerForm
+  display: flex
+  flex-direction: column
+  justify-content: flex-startç
+  align-items: center
+  textarea
+    width: 600px
+    height: 285px
+    border-radius: 40px
+    border: none
+    font-size: 20px
+    color: var(--c-100)
+    background-color: var(--c-25)
+    padding: 37px 42px
+    resize: none
+    scrollbar-color: transparent transparent
+    @media (max-width: 480px)
+      width: calc(100% - 60px)
+      height: 370px
+    &:focus
+      outline: none
+    &::-webkit-scrollbar
+      display: none
+  input
+    width: 195px
+    height: 75px
+    border: none
+    border-radius: 40px
+    font-size: 45px
+    font-weight: 700
+    text-transform: uppercase
+    color: var(--c-25)
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(103.39deg, #AA8812 7.13%, #027ABD 93.3%)
+    cursor: pointer
+    margin-top: 35px
+    margin-bottom: 3px
+    transition: all 0.1s ease-in-out
+    &:hover
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(153.39deg, #AA8812 7.13%, #027ABD 93.3%)
+    &:active
+      width: 201px
+      height: 81px
+      font-size: 47px
+      border-radius: 50px
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(153.39deg, #AA8812 27.13%, #027ABD 93.3%)
+      margin-top: 32px
+      margin-bottom: 0px
+
+.spinner
+  width: 150px
+  height: auto
+  animation-duration: 2s
+  animation-name: rotated
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  @media (max-width: 480px)
+    margin-top: 180px
+@keyframes rotated
+  from
+    transform: rotate(45deg)
+  to
+    transform: rotate(405deg)

@@ -1,0 +1,22 @@
+.container
+  width: 70px
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: var(--c-75)
+  border-left: 1px solid var(--c-25)
+  cursor: pointer
+  @media (max-width: 480px)
+    width: 100vw
+    height: 70px
+    border-left: none
+    border-top: 1px solid var(--c-25)
+  p
+    transform: rotate(90deg)
+    font-size: 24px
+    text-transform: uppercase
+    user-select: none
+    @media (max-width: 480px)
+      transform: rotate(0deg)
+    

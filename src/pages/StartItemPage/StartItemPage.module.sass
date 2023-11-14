@@ -1,0 +1,65 @@
+.container
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  @media (max-width: 480px)
+    margin-top: 5px
+  .inputs
+    width: 265px
+    height: 75px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-radius: 20px
+    padding: 0 25px
+    background-color: var(--c-25)
+    margin-bottom: 15px
+    @media (max-width: 480px)
+      width: 260px
+      height: 90px
+      margin-bottom: 23px
+    input
+      width: 100%
+      font-size: 30px
+      background-color: transparent
+      border: none
+      color: var(--c-75)
+      @media (max-width: 480px)
+        font-size: 27px
+      &:focus
+        outline: none
+    span
+      font-size: 36px
+      user-select: none
+  .text
+    font-size: 16px
+    margin-top: -7px
+  .button
+    width: 195px
+    height: 75px
+    border: none
+    border-radius: 40px
+    font-size: 45px
+    font-weight: 700
+    text-transform: uppercase
+    color: var(--c-25)
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(103.39deg, #AA8812 7.13%, #D907FB 141.79%)
+    cursor: pointer
+    margin-top: 35px
+    margin-bottom: 3px
+    transition: all 0.1s ease-in-out
+    @media (max-width: 480px)
+      margin-top: 47px
+    &:hover
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(153.39deg, #AA8812 7.13%, #D907FB 141.79%)
+    &:active
+      width: 201px
+      height: 81px
+      font-size: 47px
+      border-radius: 50px
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(153.39deg, #AA8812 27.13%, #D907FB 141.79%)
+      margin-top: 32px
+      margin-bottom: 0px
+    
